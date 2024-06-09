@@ -1,0 +1,122 @@
+#profileMenu {
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#profileMenu.visible {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.box-container .box {
+    flex: 1 1 15rem;
+    text-align: center;
+}
+
+.box-container .box h3 {
+    color: #7c7c7c;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.box-container .box a {
+    display: block;
+    color: #a7a6a6;
+    padding: 0.7rem 0;
+}
+
+.box-container .box a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.box-container .box a:hover img {
+    margin-top: 1rem;
+}
+
+.credit {
+    text-align: center;
+    margin-top: 1.5 rem;
+    padding-top: 2.5rem;
+    color: #7a7a7a;
+    border-top: .1rem solid rgba(0, 0, 0, 1);
+}
+
+.credit span {
+    color: var(--antiquewhite)
+}
+Add to your stylesheet
+
+.bg-layers {
+    -webkit-animation: filter-animation 4s infinite;
+    animation: filter-animation 4s infinite;
+}
+
+.bg-scale {
+    -webkit-animation: filter-animation 8s infinite;
+    animation: filter-scale 8s infinite;
+}
+
+.models h3 {
+    color: #7c7c7c;
+    padding: 0.5rem 0;
+    text-align: center;
+    line-height: 1.5; /* Adjust the line-height as needed */
+}
+.models h3 {
+    color: #7c7c7c;
+    font-size: 3.5rem;
+    padding: 0.5rem 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@-webkit-keyframes filter-animation {
+    0% {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    50% {
+      -webkit-filter: hue-rotate(45deg);
+    }
+
+    100% {
+      -webkit-filter: hue-rotate(0deg);
+    }
+}
+
+@keyframes filter-animation {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    50% {
+      filter: hue-rotate(45deg);
+    }
+    100% {
+      filter: hue-rotate(0deg);
+    }
+}
+
+@keyframes filter-scale {
+    0% {
+      transform:scale(1);
+    }
+    50% {
+      transform:scale(1.4);
+    }
+    100% {
+        transform:scale(.8);
+    }
+}
